@@ -1,0 +1,34 @@
+<div class="row restaurant-row text-center">
+	<div class="col-md-6 text-center">
+		<h2 class="topBar">ORDER UP!</h2>
+		{{#each burgers}}
+			{{#unless devoured}}
+				<div class="row burger-item">
+					<div class="text-center"><button data-id="{{id}}" class="btn btn-default devour-burger text-center">{{burger_name}}</button></div>
+				</div>
+			{{/unless}}
+		{{/each}}	
+	</div>
+
+
+	<div class="col-md-6">
+		<h2 class="topBar">Next Stop: RestRoom</h2>
+		{{#each burgers}}
+			{{#if devoured}}
+				<div class="row burger-item">
+					<div class="col-md-12 burgerNames"><p>#{{id}} {{burger_name}}</p></div> 
+				</div>
+			{{/if}}
+		{{/each}}	
+	</div>
+</div>
+
+<div class="row">
+	<div class="col-md-4 col-md-offset-4 customBurger">
+		<p class="topBar">Make A Custom Burger</p>
+		<form action="/" method="POST">
+			<textarea class="form-control align-center" type="text" name="burger"></textarea>
+			<button class="btn btn-default" type="submit">Order</button>
+		</form>
+	</div>
+</div>

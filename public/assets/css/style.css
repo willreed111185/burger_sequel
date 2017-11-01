@@ -1,0 +1,34 @@
+#headLogo{
+	width : 20%;
+}
+
+.jumbotron{
+	background-color:#f22;
+	border : 0px;
+	color:#fe1;
+	font-family: 'Josefin Sans', sans-serif;
+}
+.page-header{
+	border : 0px;
+}
+body{
+	background-color:#f22;
+	font-family: 'Josefin Sans', sans-serif;
+}
+.devour-burger{
+	background-color:#fe1;
+	color:#f22;
+	font-family: 'Josefin Sans', sans-serif;
+	border:none;
+	border-style: double;
+	min-width: 170px;
+}
+.customBurger{
+	padding-top: 30px;
+}
+.topBar{
+	color:#fe1;
+}
+.burgerNames{
+	color:#fe1;
+}
